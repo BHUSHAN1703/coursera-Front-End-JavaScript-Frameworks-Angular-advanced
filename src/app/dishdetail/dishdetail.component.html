@@ -1,5 +1,12 @@
-<div class="container" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column" fxLayoutAlign.gt-md="space-around center"
-  fxLayoutGap="10px" fxLayoutGap.xs="0">
+<div class="container"
+    fxLayout="row wrap"
+    fxLayout.sm="column"
+    fxLayout.xs="column"
+    fxLayoutAlign.gt-md="space-around center"
+    fxLayoutGap="10px" 
+    fxLayoutGap.xs="0">
+
+  
   	<div fxFlex="80">
     	<div fxFlex *ngIf="dish">
       		<mat-card>
@@ -13,10 +20,12 @@
           			<p>{{ dish.description}} </p>
         		</mat-card-content>
         		<mat-card-actions>
+					
+					<button md-button (click)="goBack()">BACK</button>
           			<button md-button>LIKE</button>
           			<button md-button>SHARE</button>
         		</mat-card-actions>
-      		</mat-card>
+			</mat-card>
     	</div>
   	</div>
   	<div fxFlex="40" *ngIf="dish">
