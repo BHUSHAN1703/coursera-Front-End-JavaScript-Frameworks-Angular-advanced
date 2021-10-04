@@ -8,7 +8,10 @@ import { MatButtonModule } from '@angular/material/button';
 
 import { MatDialogModule } from '@angular/material/dialog';
 
-
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { FormsModule } from '@angular/forms'; 
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -29,6 +32,7 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
 import {PromotionService} from './services/promotion.service';
 import {LeaderService} from './services/leader.service';
 import { LoginComponent } from './login/login.component';
+
 
 
 
@@ -56,7 +60,11 @@ import { LoginComponent } from './login/login.component';
     MatButtonModule,
     AppRoutingModule,
     MatDialogModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatFormFieldModule, 
+    MatInputModule,
+    MatCheckboxModule,
+    FormsModule 
    
     
   ],
