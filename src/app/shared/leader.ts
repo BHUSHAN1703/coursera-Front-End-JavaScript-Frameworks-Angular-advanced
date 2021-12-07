@@ -1,5 +1,5 @@
 export class Leader {
-    id: number | undefined; 
+    id!: number; 
     name: string | undefined;
     image: string | undefined;
     designation: string | undefined;
